@@ -65,7 +65,14 @@
   <h2>button</h2>
     <button type="button">Press Me!</button>
   <h2>canvas</h2>
+  <canvas id="myCanvas"></canvas>
 
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+</script>
   <h2>caption</h2>
     <caption> i am a caption </caption>
 
@@ -79,7 +86,23 @@
     <code>A piece of computer code</code>
 
   <h2>colorgroup</h2>
-    (HELP)
+  <table>
+<colgroup>
+  <col style="background-color:red">
+  <col style="background-color:yellow">
+  <col style="background-color:pink">
+</colgroup>
+<tr>
+  <th>ISBN</th>
+  <th>Title</th>
+  <th>Price</th>
+</tr>
+<tr>
+  <td>3476896</td>
+  <td>My first HTML</td>
+  <td>$53</td>
+</tr>
+</table>
 
   <h2>input</h2>
     <input list="browsers">
@@ -132,7 +155,7 @@
     <em>hello</em>
 
   <h2>embed</h2>
-    (help)
+    <embed src="./test.swf">
 
   <h2>fieldset</h2>
     <fieldset>
@@ -143,10 +166,10 @@
     </fieldset>
 
   <h2>figure</h2>
-    (HELP)
+    <figure>
+      <img src="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg" alt="The Kitty" >
+    </figure>
 
-  <h2>figure2</h2>
-    (help)
 
   <h2>font size</h2>
     <font size="6" color="red">hello</font>
@@ -165,10 +188,13 @@
         First name: <input type="text" name="fname"><br>
         Last name: <input type="text" name="lname"><br>
         <input type="submit" value="Submit">
-    </form>
+     </form>
 
   <h2>frameset</h2>
-    (help)
+    <frameset cols="25%,*,25%">
+      <frame src="http://www.google.com">
+      <frame src="http://www.yahoo.com">
+    </frameset>
 
   <h2>h1-h6</h2>
     <h1>This is heading 1</h1>
@@ -184,6 +210,92 @@
       <h3>wassup with you</h3>
       <p>i dont know what to say anymore</p>
     </header>
-    
+
+  <h2>i</h2>
+    <p>He named his car <i>The lightning</i>, because it was very fast.</p>
+
+  <h2>inframe</h2>
+    <iframe src="http://www.w3schools.com"></iframe>
+
+  <h2>image</h2>
+    <img src="http://www.gannonknight.com/wp-content/uploads/2011/02/three-hearts-copy-web.jpg">
+
+  <h2>input</h2>
+    help
+
+  <h2>insert</h2>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+  <section>
+    <h2>keyboard</h2>
+      <kbd>Keyboard input</kbd>
+  </section>
+
+  <section>
+    <h2>keygen</h2>
+  HELP
+</section>
+
+  <h2>label</h2>
+  help (need a file)
+
+  <section>
+    <h2>legend</h2>
+      <form>
+        <fieldset>
+          <legend>Enter Info:</legend>
+                Name: <input type="text" size="30"><br>
+                Email: <input type="text" size="30"><br>
+                Date of birth: <input type="text" size="10">
+        </fieldset>
+      </form>
+  </section>
+
+  <section>
+    <h2>list</h2>
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>link</h2>
+      <head>
+        <link rel="stylesheet" type="wassup" href="youtube.com">
+      </head>
+  </section>
+
+  <section>
+    <h2>MAIN</h2>
+      <main>
+          <h1>Web Browsers</h1>
+            <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+          <article>
+            <h1>Google Chrome</h1>
+              <p>Google Chrome is a free, open-source web browser developed by Google,
+                released in 2008.</p>
+          </article>
+
+          <article>
+            <h1>Internet Explorer</h1>
+              <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+          </article>
+
+          <article>
+            <h1>Mozilla Firefox</h1>
+              <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+          </article>
+      </main>
+  </section>
+
+
 </body>
 </html>
